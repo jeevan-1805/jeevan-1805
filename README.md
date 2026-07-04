@@ -296,9 +296,8 @@ Worked on AI-assisted creative production, multimedia content, branding material
 
 Once the workflow below is added to this repo, this line will animate your contribution graph as a snake eating your commits:
 
-```markdown
 ![snake animation](https://raw.githubusercontent.com/jeevan-1805/jeevan-1805/output/github-contribution-grid-snake-dark.svg)
-```
+
 
 **To enable it:** create `.github/workflows/snake.yml` in this same `jeevan-1805` repo with the following, then push once — it'll run automatically after that:
 
