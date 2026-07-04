@@ -91,7 +91,7 @@ I'm **Jeevan Y**, a BCA graduate from Chennai, India, who enjoys building softwa
 </table>
 
 > 🔭 **Currently building:** AI-powered career tools that make ATS resume screening transparent and actually useful
-> 🌐 **Full portfolio:** every project, certificate, and case study lives at **[jeevan-1805.github.io/Portfolio](https://jeevan-1805.github.io/Portfolio/)** — this profile is the quick tour, that site is the deep dive.
+> 🌐 **Full portfolio:** every project and certificates lives at **[jeevan-1805.github.io/Portfolio](https://jeevan-1805.github.io/Portfolio/)** — this profile is the quick tour, that site is the deep dive.
 
 <div align="right"><a href="#top">↑ back to top</a></div>
 
@@ -221,7 +221,7 @@ flowchart LR
 <a href="https://github.com/jeevan-1805/TN-Temperature"><img src="assets/pin-tn-temperature.svg" alt="TN-Temperature repository card"/></a>
 </p>
 
-<div align="center"><sub>These cards are self-hosted SVGs in <code>assets/</code>, refreshed daily by <a href="./.github/workflows/update-cards.yml"><code>update-cards.yml</code></a> — no third-party server involved.</sub></div>
+
 
 <div align="right"><a href="#top">↑ back to top</a></div>
 
@@ -299,57 +299,16 @@ Worked on AI-assisted creative production, multimedia content, branding material
 
 <img src="assets/achievements.svg" width="90%" alt="GitHub achievement stats"/>
 <br/>
-<sub>Self-hosted SVG in <code>assets/</code>, refreshed daily by <a href="./.github/workflows/update-cards.yml"><code>update-cards.yml</code></a> — computed live from the GitHub API, no third-party trophy server involved.</sub>
 
 </div>
 
-> ℹ️ The stats card, top-languages card, and streak card above still call the shared public `github-readme-stats.vercel.app` / `streak-stats.demolab.com` instances. They're generally reliable but can occasionally rate-limit like the trophy widget did. Say the word if you'd like these moved to the same self-hosted `assets/` + Action pattern used for the achievements strip and repo cards.
-
 <details>
-<summary><b>🐍 Contribution Snake (enable it in one step)</b></summary>
+<summary><b>🐍 Contribution Snake</b></summary>
 <br/>
 
-Once the workflow below is added to this repo, this line will animate your contribution graph as a snake eating your commits:
 
-```markdown
 ![snake animation](https://raw.githubusercontent.com/jeevan-1805/jeevan-1805/output/github-contribution-grid-snake-dark.svg)
-```
 
-**To enable it:** create `.github/workflows/snake.yml` in this same `jeevan-1805` repo with the following, then push once — it'll run automatically after that:
-
-```yaml
-name: Generate Snake Animation
-
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-
-jobs:
-  generate:
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Generate snake animation
-        uses: Platane/snk@v3
-        with:
-          github_user_name: jeevan-1805
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-      - name: Push snake svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
 
 </details>
 
