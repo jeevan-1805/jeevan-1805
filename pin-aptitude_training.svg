@@ -1,0 +1,19 @@
+<svg width="400" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aptitude_training repository card">
+  <style>
+    .title { font: 600 18px "Segoe UI", Ubuntu, Helvetica, Arial, sans-serif; fill: #8B5CF6; }
+    .desc  { font: 400 13px "Segoe UI", Ubuntu, Helvetica, Arial, sans-serif; fill: #C9D1D9; }
+    .meta  { font: 400 12px "Segoe UI", Ubuntu, Helvetica, Arial, sans-serif; fill: #C9D1D9; }
+  </style>
+  <rect x="0.5" y="0.5" rx="10" width="399" height="149" fill="#0B1020" stroke="#1E293B"/>
+  <g transform="translate(18,16)">
+    <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 1 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 0 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 0 1 1-1Z" fill="#38BDF8"/>
+  </g>
+  <text x="42" y="30" class="title">Aptitude_training</text>
+  <text x="18" y="58" class="desc">No description provided</text>
+  <circle cx="24" cy="121" r="6" fill="#663399"/>
+  <text x="36" y="126" class="meta">CSS</text>
+  <g transform="translate(150,114)"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z" fill="#38BDF8"/></g>
+  <text x="172" y="126" class="meta">0</text>
+  <g transform="translate(210,114)"><path d="M5 3.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm5-1.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM1.75 2.5a2.25 2.25 0 1 1 3 2.122v1.756a2.25 2.25 0 0 1 .75 1.372c0 .862-.63 1.5-1.5 1.5s-1.5-.638-1.5-1.5c0-.584.31-1.074.75-1.372V4.622A2.25 2.25 0 0 1 1.75 2.5ZM5 12.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="#38BDF8"/></g>
+  <text x="232" y="126" class="meta">0</text>
+</svg>

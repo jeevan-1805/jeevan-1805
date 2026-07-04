@@ -3,12 +3,21 @@
   ---------------------------------------------
   SETUP:
   1. Create a repo named exactly "jeevan-1805" (must match your GitHub username).
-  2. Make it Public, add this file as README.md at the root.
+  2. Make it Public. Commit this whole folder structure to its root:
+       README.md
+       assets/                      (pin cards + achievements SVGs)
+       scripts/generate_cards.py    (regenerates the assets/ SVGs)
+       scripts/repos.json           (edit this to add/remove pin cards)
+       .github/workflows/update-cards.yml   (auto-refreshes assets/ daily)
+       .github/workflows/snake.yml          (optional, see step 4)
   3. It will automatically appear on https://github.com/jeevan-1805
-  4. Optional: add the included snake.yml to .github/workflows/ in that same
-     repo to enable the animated contribution snake near the bottom.
+  4. Optional: the included snake.yml enables the animated contribution
+     snake near the bottom — it needs no extra setup beyond being present
+     in .github/workflows/.
   5. The WhatsApp button is optional — remove it if you'd rather keep that
      number off a public, highly-indexed page like your GitHub profile.
+  6. update-cards.yml needs no secrets — it uses the GITHUB_TOKEN GitHub
+     already provides to every workflow run.
 -->
 
 <a id="top"></a>
@@ -205,12 +214,14 @@ flowchart LR
 ### 📂 Other Repositories
 
 <p align="center">
-<a href="https://github.com/jeevan-1805/Portfolio"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jeevan-1805&repo=Portfolio&bg_color=0B1020&title_color=8B5CF6&icon_color=38BDF8&text_color=C9D1D9&border_color=1E293B" /></a>
-<a href="https://github.com/jeevan-1805/Savings-Tracker"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jeevan-1805&repo=Savings-Tracker&bg_color=0B1020&title_color=8B5CF6&icon_color=38BDF8&text_color=C9D1D9&border_color=1E293B" /></a>
+<a href="https://github.com/jeevan-1805/Portfolio"><img src="assets/pin-portfolio.svg" alt="Portfolio repository card"/></a>
+<a href="https://github.com/jeevan-1805/Savings-Tracker"><img src="assets/pin-savings-tracker.svg" alt="Savings-Tracker repository card"/></a>
 <br/>
-<a href="https://github.com/jeevan-1805/Aptitude_training"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jeevan-1805&repo=Aptitude_training&bg_color=0B1020&title_color=8B5CF6&icon_color=38BDF8&text_color=C9D1D9&border_color=1E293B" /></a>
-<a href="https://github.com/jeevan-1805/TN-Temperature"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jeevan-1805&repo=TN-Temperature&bg_color=0B1020&title_color=8B5CF6&icon_color=38BDF8&text_color=C9D1D9&border_color=1E293B" /></a>
+<a href="https://github.com/jeevan-1805/Aptitude_training"><img src="assets/pin-aptitude_training.svg" alt="Aptitude_training repository card"/></a>
+<a href="https://github.com/jeevan-1805/TN-Temperature"><img src="assets/pin-tn-temperature.svg" alt="TN-Temperature repository card"/></a>
 </p>
+
+<div align="center"><sub>These cards are self-hosted SVGs in <code>assets/</code>, refreshed daily by <a href="./.github/workflows/update-cards.yml"><code>update-cards.yml</code></a> — no third-party server involved.</sub></div>
 
 <div align="right"><a href="#top">↑ back to top</a></div>
 
@@ -286,9 +297,13 @@ Worked on AI-assisted creative production, multimedia content, branding material
 
 <br/><br/>
 
-<img src="https://github-profile-trophy.vercel.app/?username=jeevan-1805&theme=tokyonight&no-frame=true&margin-w=10&column=7" width="90%"/>
+<img src="assets/achievements.svg" width="90%" alt="GitHub achievement stats"/>
+<br/>
+<sub>Self-hosted SVG in <code>assets/</code>, refreshed daily by <a href="./.github/workflows/update-cards.yml"><code>update-cards.yml</code></a> — computed live from the GitHub API, no third-party trophy server involved.</sub>
 
 </div>
+
+> ℹ️ The stats card, top-languages card, and streak card above still call the shared public `github-readme-stats.vercel.app` / `streak-stats.demolab.com` instances. They're generally reliable but can occasionally rate-limit like the trophy widget did. Say the word if you'd like these moved to the same self-hosted `assets/` + Action pattern used for the achievements strip and repo cards.
 
 <details>
 <summary><b>🐍 Contribution Snake (enable it in one step)</b></summary>
@@ -296,8 +311,9 @@ Worked on AI-assisted creative production, multimedia content, branding material
 
 Once the workflow below is added to this repo, this line will animate your contribution graph as a snake eating your commits:
 
+```markdown
 ![snake animation](https://raw.githubusercontent.com/jeevan-1805/jeevan-1805/output/github-contribution-grid-snake-dark.svg)
-
+```
 
 **To enable it:** create `.github/workflows/snake.yml` in this same `jeevan-1805` repo with the following, then push once — it'll run automatically after that:
 

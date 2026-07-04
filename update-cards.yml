@@ -1,0 +1,58 @@
+# Keeps assets/*.svg (repo pin cards + achievements strip) current.
+#
+# Runs entirely on GitHub's own infrastructure:
+#   - actions/checkout and actions/setup-python are GitHub's own first-party
+#     actions.
+#   - scripts/generate_cards.py talks directly to api.github.com using the
+#     token GitHub already injects into every workflow run.
+#   - The commit step uses plain git commands, so there is no dependency on
+#     any third-party server or Docker image, and nothing can rate-limit or
+#     go down except GitHub itself.
+#
+# Runs on a daily schedule, on demand, and whenever this workflow file or
+# the generator script changes.
+
+name: Update Profile Cards
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # daily at 03:00 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/generate_cards.py"
+      - "scripts/repos.json"
+      - ".github/workflows/update-cards.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update-cards:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/generate_cards.py
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: auto-update profile cards [skip ci]"
+            git push
+          fi

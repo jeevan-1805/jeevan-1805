@@ -1,0 +1,16 @@
+<svg width="800" height="130" viewBox="0 0 800 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GitHub achievement stats">
+  <style>
+    .value { font: 700 30px "Segoe UI", Ubuntu, Helvetica, Arial, sans-serif; fill: #8B5CF6; }
+    .label { font: 400 13px "Segoe UI", Ubuntu, Helvetica, Arial, sans-serif; fill: #C9D1D9; letter-spacing: 0.5px; }
+  </style>
+  <rect x="0.5" y="0.5" rx="12" width="799" height="129" fill="#0B1020" stroke="#1E293B"/>
+  
+  <text x="100.0" y="58" text-anchor="middle" class="value">7</text>
+  <text x="100.0" y="86" text-anchor="middle" class="label">Public Repos</text>
+  <text x="300.0" y="58" text-anchor="middle" class="value">1</text>
+  <text x="300.0" y="86" text-anchor="middle" class="label">Total Stars</text><line x1="200.0" y1="24" x2="200.0" y2="106" stroke="#1E293B" stroke-width="1"/>
+  <text x="500.0" y="58" text-anchor="middle" class="value">1</text>
+  <text x="500.0" y="86" text-anchor="middle" class="label">Followers</text><line x1="400.0" y1="24" x2="400.0" y2="106" stroke="#1E293B" stroke-width="1"/>
+  <text x="700.0" y="58" text-anchor="middle" class="value">Python</text>
+  <text x="700.0" y="86" text-anchor="middle" class="label">Top Language</text><line x1="600.0" y1="24" x2="600.0" y2="106" stroke="#1E293B" stroke-width="1"/>
+</svg>
