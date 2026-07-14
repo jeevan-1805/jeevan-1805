@@ -76,7 +76,6 @@ I'm **Jeevan Y**, a BCA graduate from Chennai, India, who enjoys building softwa
 
 </td>
 <td width="38%" align="center">
-<img src="https://jeevan-1805.github.io/Portfolio/images/profile.png" width="220" alt="Jeevan Y"/>
 <br/><br/>
 
 <table>
