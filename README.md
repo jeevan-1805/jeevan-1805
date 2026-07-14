@@ -301,7 +301,7 @@ Worked on AI-assisted creative production, multimedia content, branding material
 
 </div>
 
-<details>
+
 <summary><b>🐍 Contribution Snake</b></summary>
 <br/>
 
@@ -309,7 +309,6 @@ Worked on AI-assisted creative production, multimedia content, branding material
 ![snake animation](https://raw.githubusercontent.com/jeevan-1805/jeevan-1805/output/github-contribution-grid-snake-dark.svg)
 
 
-</details>
 
 <div align="right"><a href="#top">↑ back to top</a></div>
 
